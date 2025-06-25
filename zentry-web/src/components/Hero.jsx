@@ -5,7 +5,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 
-gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger);
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(1);
@@ -102,7 +102,7 @@ const Hero = () => {
           <div className="mask-clip-path absolute-center absolute z-50 size-64 cursor-pointer overflow-hidden rounded-lg">
             <div
               onClick={handleMiniVideoClick}
-              className="origin-center scale-50 opacity-40 transition-all duration-500 ease-in hover:scale-100 hover:opacity-100"
+              className="origin-center scale-20 opacity-40 transition-all duration-500 ease-in hover:scale-100 hover:opacity-100"
             >
               <video
                 ref={nextVideodRef}
@@ -142,7 +142,7 @@ const Hero = () => {
           G<b className="special-font">a</b>ming
         </h1>
 
-        <div className="absolute left-0 top-0 z-40 size-full">
+        <div className="absolute left-0 top-0 z-40 size-full mt-6">
           <div className="mt-10 px-5 sm:px-10">
             <h1 className="special-font hero-heading text-blue-100">
               redefi<b>n</b>e
