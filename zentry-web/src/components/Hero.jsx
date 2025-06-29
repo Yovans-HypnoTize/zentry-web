@@ -130,11 +130,11 @@ const Hero = () => {
             src={getVideoSrc(
               currentIndex === totalVideos - 1 ? 1 : currentIndex
             )}
-            // autoPlay
-            // loop
+            autoPlay
+            loop
             muted
             className="absolute left-0 top-0 size-full object-cover object-center"
-            // onLoadedData={handleVideoLoad}
+            onLoadedData={handleVideoLoad}
           />
         </div>
 
@@ -144,11 +144,11 @@ const Hero = () => {
 
         <div className="absolute left-0 top-0 z-40 size-full mt-6">
           <div className="mt-10 px-5 sm:px-10">
-            <h1 className="special-font hero-heading text-blue-100">
+            <h1 className="special-font hero-heading text-blue-100 tracking-[2px]">
               redefi<b>n</b>e
             </h1>
 
-            <p className="mb-5 max-w-64 font-robert-regular text-blue-100">
+            <p className="mb-5 max-w-64 font-robert-regular text-blue-100 ">
               Enter Metagame Layer <br /> Unleash the Player Economy
             </p>
 
@@ -161,8 +161,8 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <h1 className="special-font hero-heading absolute bottom-5 right-5 text-black">
-        G<b className="special-font">a</b>ming
+      <h1 className="special-font hero-heading absolute bottom-5 right-5 text-black  tracking-[2px]">
+        G<b>a</b>ming
       </h1>
     </div>
   );

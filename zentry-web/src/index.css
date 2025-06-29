@@ -79,7 +79,7 @@ body {
 }
 
 @utility hero-heading {
-  @apply uppercase font-zentry font-black text-5xl sm:right-10 sm:text-7xl md:text-9xl lg:text-[12rem];
+  @apply uppercase font-zentry font-black text-5xl sm:right-10 sm:text-7xl md:text-9xl lg:text-[12rem] tracking-[2px];
 }
 
 @utility about-subtext {
@@ -91,7 +91,7 @@ body {
 }
 
 @utility animated-title {
-  @apply flex flex-col gap-1 text-7xl uppercase leading-[.8] text-white sm:px-32 md:text-[6rem];
+  @apply flex flex-col gap-1 text-7xl uppercase leading-[.9] text-white sm:px-32 md:text-[6rem];
 }
 
 @utility animated-word {
@@ -100,7 +100,6 @@ body {
   transform-origin: 50% 50% -150px !important;
   will-change: opacity, transform;
 }
-
 
 @utility bento-tilt_1 {
   @apply relative border-hsla col-span-2 overflow-hidden rounded-md transition-transform duration-300 ease-out;
@@ -111,7 +110,7 @@ body {
 }
 
 @utility bento-title {
-  @apply uppercase md:text-6xl text-4xl font-black font-zentry;
+  @apply uppercase md:text-6xl text-4xl font-black font-zentry tracking-[2px];
 }
 
 @utility story-img-container {
@@ -158,11 +157,11 @@ body {
   @apply h-1 w-px rounded-full bg-white transition-all duration-200 ease-in-out;
 }
 
-  @utility indicator-line-active {
-    animation: indicator-line 0.5s ease infinite;
-    animation-delay: calc(var(--animation-order) * 0.1s);
-  }
-  /* @utility indicator-line.active {
+@utility indicator-line-active {
+  animation: indicator-line 0.5s ease infinite;
+  animation-delay: calc(var(--animation-order) * 0.1s);
+}
+/* @utility indicator-line.active {
     animation: indicator-line 0.5s ease infinite;
     animation-delay: calc(var(--animation-order) * 0.1s);
   } */
